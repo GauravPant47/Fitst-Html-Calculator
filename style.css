@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #050505;
+}
+.container{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    background-color: #121213;
+    border-radius: 20px;
+  
+}
+
+.container .button{
+    position: relative;
+    display: grid;
+}
+
+.container .button #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #ffffff;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.container .button span{
+    position: relative;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(85, 85, 85, 0.1),-5px -5px 20px rgb(0, 0, 0);
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.1),-5px -5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.container .button span:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),inset -5px -5px 10px rgb(0, 0, 0);
+    color: #2f00fe;
+}
+.container .button span#clear{
+    grid-column: span 2;
+    background: #704d2c;
+    color: rgb(255, 255, 255);
+    border-radius: 2px solid #000000;
+}
+.container .button span#plus{
+    grid-row: span 2;
+    background: #2f3f24;
+    color: #fff;
+    border-radius: 2px solid #000000;
+}
+.container .button span#equal{
+    grid-row: span 2;
+    background: #22313d;
+    color: #fff;
+    border-radius: 2px solid #000000;
+}
+.container .button span#clear:active,
+.container .button span#plus:active,
+.container .button span#equal:active{
+    box-shadow:  5px 5px 10px rgba(255, 255, 255, 0.1),-5px -5px 10px rgb(0, 0, 0), inset 5px 5px 10px rgba(255, 255, 255, 0.1);
+}
